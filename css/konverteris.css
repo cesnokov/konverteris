@@ -1,0 +1,48 @@
+#konverteris {
+}
+
+#ekranas {
+	background-color: #cccccc;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.baltas_fonas {
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+.rezultatu_langas {
+	text-align: right;
+	margin-bottom: 0px;
+}
+
+.ivediomo_langas {
+	text-align: right;
+	margin-bottom: 0px !important; 
+}
+
+.operacija {
+	font-size: 12px;
+}
+
+.ivedimo_baze, .rezultatu_baze {
+	margin-bottom: 10px;
+}
+.bazes_aprasymas {
+}
+
+.rezultatu_langas_div {
+	font-size: 30px;
+	text-align: right;
+	color: #000000;
+	background-color: #66CC99;
+	height: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}

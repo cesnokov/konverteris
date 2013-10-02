@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Konverteris</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Stiliai -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/konverteris.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Ikonos -->
+    <link rel="shortcut icon" href="img/ico/favicon.ico">
+    <!-- iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="img/ico/57x57.png">
+    <link rel="apple-touch-startup-image" href="img/ico/320x460.png" media="(device-width: 320px)">
+    <!-- iPhone (Retina) -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/114x114.png">
+    <link rel="apple-touch-startup-image" href="img/ico/640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)">
+    <!-- iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/72x72.png">
+    <link rel="apple-touch-startup-image" href="img/ico/768x1004.png" media="(device-width: 768px) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="img/ico/748x1024.png" media="(device-width: 768px) and (orientation: landscape)">
+    <!-- iPad (Retina) -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/144x144.png">
+    <link rel="apple-touch-startup-image" href="img/ico/1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="img/ico/1496x2048.png" media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+    <!-- iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+</head>
+<body>
+  	<div id="ekranas">
+    <div class="container">
+    
+<div id="konsole"></div>
+
+      <div class="row">
+        <div class="span8 offset2 baltas_fonas" id="konverteris">                
+        <div class="span8">
+        <table width="100%" border="0" cellspacing="0" cellpadding="5"><tr><td>
+        <div class="rezultatu_langas_div" id="rezultatu_langas_id">0</div>
+        </td></tr></table>        
+        </div>
+        <div class="span8">
+        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="50%" align="right" valign="middle">
+                <select id="baze_is_id" class="span2">
+                <option value="none">Iš:</option>                
+                <option value="2">BIN (2)</option>
+                <option value="8">OCT (8)</option>
+                <option value="10">DEC (10)</option>
+                <option value="16">HEX (16)</option>
+                </select>
+            </td>
+            <td width="50%" align="left" valign="middle">
+                <select id="baze_i_id" class="span2">
+                <option value="none">Į:</option>                
+                <option value="2">BIN (2)</option>
+                <option value="8">OCT (8)</option>
+                <option value="10">DEC (10)</option>
+                <option value="16">HEX (16)</option>
+                </select>
+            </td>
+          </tr>
+        </table>
+		</div> 
+             
+        <div class="span8">
+        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="60%" valign="middle">
+            <input class="span6 ivediomo_langas" id="ivediomo_langas_id" type="text" autocapitalize="off" autocorrect="off" placeholder="Įveskite skaičių" disabled="disabled">
+            </td>
+            <td width="20%" valign="middle">
+			<button class="btn btn-primary btn-block" id="migtukas_konvertuoti_id" type="button"> <i class="icon-refresh icon-white"></i> </button>
+            </td>
+          </tr>
+        </table>
+		</div>          
+        
+        <div class="span4">
+        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="33%" align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="1_id" type="button" value="1">1</button></td>
+            <td width="33%" align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="2_id" type="button" value="2">2</button></td>
+            <td width="33%" align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="3_id" type="button" value="3">3</button></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="4_id" type="button" value="4">4</button></td>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="5_id" type="button" value="5">5</button></td>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="6_id" type="button" value="6">6</button></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="7_id" type="button" value="7">7</button></td>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="8_id" type="button" value="8">8</button></td>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="9_id" type="button" value="9">9</button></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="0_id" type="button" value="0">0</button></td>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="00_id" type="button" value="00">00</button></td>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block skaicius" id="000_id" type="button" value="000">000</button></td>
+          </tr>
+        </table>
+		</div>
+        
+        <div class="span4">
+        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="33%" align="center" valign="middle"><button class="btn btn-inverse btn-block" id="taskas_id" type="button">.</button></td>
+            <td width="33%" align="center" valign="middle"><button class="btn btn-inverse btn-block" id="pm_id" type="button" value="-">-/+</button></td>
+            <td width="33%" align="center" valign="middle"><button class="btn btn-danger btn-block" id="isvalyti_id" type="button">CL</button></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block raide" id="a_id" type="button" value="A">A</button></td>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block raide" id="b_id" type="button" value="B">B</button></td>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block raide" id="c_id" type="button" value="C">C</button></td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block raide" id="d_id" type="button" value="D">D</button></td>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block raide" id="e_id" type="button" value="E">E</button></td>
+            <td align="center" valign="middle"><button class="btn btn-inverse btn-block raide" id="f_id" type="button" value="F">F</button></td>
+          </tr>
+        </table>
+		</div>        
+    
+        </div>
+      </div><!-- /row -->
+    </div> <!-- /container -->
+    </div> <!-- /ekranas -->
+    
+    <!-- Skriptai -->
+    <script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/konverteris.js"></script>
+    
+</body>
+</html>
